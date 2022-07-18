@@ -300,7 +300,7 @@ h2 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/img/Roberto.jpg") top center;
+  background: url("../img/Roberto.jpg") top center;
   background-size: 100vw;
   background-repeat: repeat;
   position: relative;
