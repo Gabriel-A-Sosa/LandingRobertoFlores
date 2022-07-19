@@ -84,30 +84,57 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <h2>Yo soy Roberto Flores. <br>
-            Aquí podés escuchar mi música</h2>
-        <div>
-        <h4>Disco <span style="color: #143be7;"> "Espejos"</span></h4>
-    <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
-        <option path="https://drive.google.com/uc?export=download&id=1mXLayElwterFXZ9oUciparIkdQ8k75Gf"> 1- Ancestros</option>
-        <option path="https://drive.google.com/uc?export=download&id=1OsKSC7Okj5nr1gb2dgUaKc6VhSRtzsdS" >2- Caligrafía</option>
-        <option path="https://drive.google.com/uc?export=download&id=1OtfMd_1VdqZ2q22sshMm0fOyTMrRpayQ" >3- El Sol en la bruma</option>
-        <option path="https://drive.google.com/uc?export=download&id=1xQ-i9pZX4uBxzf0X5TjF2Os_XxIe82Jl" >4- Entre mundos</option>
-        <option path="https://drive.google.com/uc?export=download&id=1yeISKyimgJOkBXW-Ir-mLGNOPlpDMHh0" >5- Espejos</option>
-        <option path="https://drive.google.com/uc?export=download&id=1DWqoLgeIJ4YvkwJhHAA-JH4wjBfI9JaW" >6- Hay vida mas barata pero no es vida </option>
-        <option path="https://drive.google.com/uc?export=download&id=1evVCZAAWauj0Z4vA3fTpZzgV4bZ-CH6v" >7- Mi casa </option>
-        <option path="https://drive.google.com/uc?export=download&id=1f6T4X8gc_aJwewiqhgPVPSY91klAlb-L" >8- Milonga de lejos  </option>
-        <option path="https://drive.google.com/uc?export=download&id=184uAUb0IBX8Yg42hIo23QMV5P8cD2Yu5" >9- Para seguir </option>
-        <option path="https://drive.google.com/uc?export=download&id=1HpUWY_vVirKTMbPu3le9M-5VWlEEpWPu" >10- Espiral </option>
-        </select>
-        <div id="reproductorBox"></div>
-        <script>cargarReproductor();</script>
-    </div>
+          <h1>Yo soy <span style="color: #4d5ffd;"> Roberto Flores</span>, cantautor uruguayo. <br>
+            Aquí podés escuchar mi <span style="color: #4d5ffd;">música</span>
+          </h1>
+         <a id="flecha" href="#reproductorContainer"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+          </svg></a>
+       
         </div>
       </div>
     </div>
   </section> 
     <!-- End Hero -->
+
+    <!--  Reproductor -->
+    
+    <div id="reproductorContainer">
+      <div>
+        <h3>SELECCIONÁ Y DALE PLAY <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+        </svg></h3> 
+        <p>Para escuchar clickeá sobre una canción y dale play al reproductor</p>
+        <p>Para descargar clickeá en " ፧ " en el reproductor y te saldrá la opción</p>
+      
+        <h4>Disco <span style="color: #001679;"> "Espejos"</span></h4>
+        <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1mXLayElwterFXZ9oUciparIkdQ8k75Gf"> 1- Ancestros</option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1OsKSC7Okj5nr1gb2dgUaKc6VhSRtzsdS" >2- Caligrafía</option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1OtfMd_1VdqZ2q22sshMm0fOyTMrRpayQ" >3- El Sol en la bruma</option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1xQ-i9pZX4uBxzf0X5TjF2Os_XxIe82Jl" >4- Entre mundos</option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1yeISKyimgJOkBXW-Ir-mLGNOPlpDMHh0" >5- Espejos</option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1DWqoLgeIJ4YvkwJhHAA-JH4wjBfI9JaW" >6- Hay vida mas barata pero no es vida </option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1evVCZAAWauj0Z4vA3fTpZzgV4bZ-CH6v" >7- Mi casa </option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1f6T4X8gc_aJwewiqhgPVPSY91klAlb-L" >8- Milonga de lejos  </option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=184uAUb0IBX8Yg42hIo23QMV5P8cD2Yu5" >9- Para seguir </option>
+            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1HpUWY_vVirKTMbPu3le9M-5VWlEEpWPu" >10- Espiral </option>
+            </select>
+            <div id="reproductorBox"></div>
+            <script>cargarReproductor();</script>
+      </div>
+      <div id="sobreMusicaCont" class="p-4 m-2 text-center">
+        <div>
+        <h4 class="card-title">Sobre "Espejos"</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique animi nam ad quibusdam iste aspernatur reiciendis deserunt perspiciatis veniam sunt ea, quas beatae voluptatibus aut ab amet dolores nihil maiores.</p>
+        </div>
+        <div>
+        <h4>Próximo disco</h4>
+        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, modi? In sequi assumenda, laudantium exercitationem est dolorem dignissimos perspiciatis alias? Ullam nobis laborum labore rem eum quaerat minus esse reiciendis.</p>
+        </div>
+    </div>
+</div>
+
 
 
      <!-- Footer -->
