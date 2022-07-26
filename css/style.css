@@ -5,7 +5,9 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #fffcf5;
+  background-color: #000945d6;
+  color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -28,7 +30,7 @@ h2, h3, h4, h5, h6{
 }
 h3 {
   
-  color: rgb(148, 111, 18);
+  color: rgb(53, 166, 247);
 }
 
 
@@ -327,22 +329,45 @@ h3 {
 /*==================== 
  # Reproductor
 ====================== */
-#reproductorContainer{
+#reproductorPadre{
+  background: url("../img/Roberto2.jpg") 70%;
+  padding: 20px;
+}
+#reproductorHijo{
   
-  background: url("../img/Roberto2.jpg");
   background-size: cover;
   padding: 3%;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center!important;
+  
+}
+#reproductorTexto{
+  margin-left: 4%;
+  background-color: #00000089;
+  padding: 2%;
+  width: 90%;
+  margin-bottom: 50px!important;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  height: 200px;
+
 }
 
 #reproductor {
-  width: 45%;
+  
+  display: block;
+  width: 100%;
+  
+ 
 }
 
 #selectTrack{ 
   border-color: #0f0f0f;
   border: 7px solid #4c597800;
-  text-align: start;
-  width: 45%;
+  width: 90%;
+  height:230px!important;
   font-size: large;
  color: #ffffff;
   background: url("../img/Espejos.jpg") center;
@@ -356,16 +381,55 @@ h3 {
   -moz-border-radius: 13px;
   border-radius: 13px;
 }
-
+#selectTrack2{ 
+  margin-left: 0%!important;
+  border-color: #0f0f0f;
+  border: 7px solid #4c597800;
+  width: 90%;
+  height:230px!important;
+  font-size: large;
+ color: #ffffff;
+  background: url("../img/fondo1.jpg") center;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+}
+ #reproductorBox{
+  background-color: #0f0f0f;
+  padding: 2vw;
+  max-width: 50%;
+  transform: translate(45%);
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+ }
 /*==================== 
  # SOBRE MÚSICA
 ====================== */
 
 #sobreMusicaCont{
+  margin-top: 3%!important;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
   background-color: #00000089;
-  display: flex;
+  text-align: start!important;
 }
 
+
+/*==================== 
+ # DISCOS
+====================== */
+#discos{
+  margin: 10% 5%;
+
+}
 
 #hero h1 {
   margin: 0 0 10px 0;
@@ -387,8 +451,16 @@ h3 {
   }
 }
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   #hero {
     background-size: cover;
+  }
+  #reproductorTexto{
+    width: 95vw!important;
+    margin-top: 20px;
+    margin-left: 0%;
   }
   #hero h2 {
     transform:scale(0.7);
@@ -398,22 +470,98 @@ h3 {
     display: block;
   }
   #reproductor{
-    width: 100%;
+    margin-left: 0%;
+    width: 95vw!important;
   }
-  #flecha{
-   display: none;
-  }
+  
   #selectTrack{
-    width: 100%;
+    width: 95vw!important;
+    margin-left: 0%;
+  }
+  #selectTrack2{
+    width: 95vw!important;
+    margin-left: 0%;
   }
   h2{
     transform: scale(0.7);
   }
   #reproductorContainer{
     text-align: center;
+    display: block!important;
+    margin-left: 0%;
+  }
+  h4{
+    margin-top: 15px;
   }
 }
+/*==================== 
+ # Videos
+====================== */
+#videosContainer{
+  background-image: url("../img/RobertoVivo.jpg");
+  background-size: contain;
+  padding: 5%;
+}
 
+
+/*--------------------------------------------------------------
+# AboutRoberto
+--------------------------------------------------------------*/
+
+.title {
+ 
+  margin-bottom: 50px;
+}
+
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, .1);
+  box-shadow: none;
+   
+}
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 5;
+  border: none;
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  margin-top:20px;
+}
+
+.carousel-indicators li {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #404040;
+}
+.carousel-indicators li {
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  background-color: #404040;
+}
+.carousel-indicators .active {
+  background-color: white;
+  max-width: 12px;
+  margin: 0 3px;
+  height: 12px;
+}
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.btn {
+margin-top: auto;
+}
 
 
 /*==================== 
@@ -421,7 +569,7 @@ h3 {
 ====================== */
 
 /* Main Footer */
-footer .main-footer{  padding: 20px 0;  background: #252525;}
+footer .main-footer{  padding: 60px 0;  background: #252525;}
 footer ul{  padding-left: 0;  list-style: none;}
 
 /* Copy Right Footer */
