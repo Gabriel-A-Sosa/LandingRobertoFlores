@@ -28,10 +28,7 @@ h1 {
 h2, h3, h4, h5, h6{
   font-family: 'Quattrocento Sans', sans-serif;
 }
-h3 {
-  
-  color: rgb(53, 166, 247);
-}
+
 
 
 
@@ -223,6 +220,9 @@ body {
   #navbar{
     display: none;
   }
+  #hero {
+    max-height: 80vh!important;
+  }
   
 }
  
@@ -261,22 +261,21 @@ body {
 ====================== */
 #reproductorPadre{
   background: url("../img/Roberto2.jpg") 70%;
+  background-size: cover;
   padding: 20px;
 }
 #reproductorHijo{
   
-  background-size: cover;
+ 
   padding: 3%;
   background-repeat: no-repeat;
-  display: flex;
-  text-align: center!important;
   
 }
 #reproductorTexto{
   margin-left: 4%;
   background-color: #00000089;
   padding: 2%;
-  width: 90%;
+  width: 100%;
   margin-bottom: 50px!important;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -296,7 +295,7 @@ body {
 #selectTrack{ 
   border-color: #0f0f0f;
   border: 7px solid #4c597800;
-  width: 90%;
+  width: 100%;
   height:230px!important;
   font-size: large;
  color: #ffffff;
@@ -312,14 +311,14 @@ body {
   border-radius: 13px;
 }
 #selectTrack2{ 
-  margin-left: 0%!important;
+  margin-left: 5%!important;
   border-color: #0f0f0f;
   border: 7px solid #4c597800;
-  width: 90%;
+  width: 100%;
   height:230px!important;
   font-size: large;
  color: #ffffff;
-  background: url("../img/fondo1.jpg") center;
+  background: url("../img/FiestadeLocos.jpg") center;
   background-size: cover;
   top: 0px;
   right: 0px;
@@ -330,6 +329,26 @@ body {
   -moz-border-radius: 13px;
   border-radius: 13px;
 }
+#selectTrack3{ 
+  margin-left: 0%!important;
+  border-color: #0f0f0f;
+  border: 7px solid #4c597800;
+  width: 100%;
+  height:230px!important;
+  font-size: large;
+  color: #ffffff;
+  background: url("../img/foto2.jpg") center;
+  background-size: cover;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  align-self: center;
+}
  #reproductorBox{
   background-color: #0f0f0f;
   padding: 2vw;
@@ -339,18 +358,9 @@ body {
   -moz-border-radius: 13px;
   border-radius: 13px;
  }
-/*==================== 
- # SOBRE MÚSICA
-====================== */
 
-#sobreMusicaCont{
-  margin-top: 3%!important;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  border-radius: 13px;
-  background-color: #00000089;
-  text-align: start!important;
-}
+
+
 
 
 /*==================== 
@@ -360,213 +370,17 @@ body {
 #sobreRoberto{
   margin-top: 50px;
   margin-bottom: 70px ;
-
 }
 
-
-
-/*==================== 
- # DISCOS
-====================== */
-
-:root {
-  --color: #3c3163;
-  --transition-time: 0.5s;
+#sobreRoberto h3{
+ padding-bottom: 3%;
 }
 
-* {
-  box-sizing: border-box;
+#sobreRoberto .card {
+  padding: 4%;
 }
 
-
-
-a {
-  color: inherit;
-}
-
-.cards-wrapper {
-
-  justify-content: space-evenly;
-  align-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 4rem;
-  padding: 4rem;
-  width: max-content;
-
-}
-
-.cardDiscos {
-  --bg-filter-opacity: 0.5;
-  background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-  height: 20em;
-  width: 15em;
-  font-size: 1.5em;
-  color: white;
-  border-radius: 1em;
-  padding: 1em;
-  /*margin: 2em;*/
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0 5em -1em black;
-  transition: all, var(--transition-time);
-  position: relative;
-  overflow: hidden;
-  border: 7px solid #ccc;
-  text-decoration: none;
-  margin: 70px!important;
-}
-
-.cardDiscos:hover {
-  transform: rotate(0);
-}
-
-.cardDiscos h1 {
-  margin: 0;
-  font-size: 1.5em;
-  line-height: 1.2em;
-}
-
-.cardDiscos p {
-  font-size: 0.75em;
-  font-family: 'Open Sans';
-  margin-top: 0.5em;
-  line-height: 2em;
-}
-
-.cardDiscos .tags {
-  display: flex;
-}
-
-.cardDiscos .tags .tag {
-  font-size: 0.75em;
-  background: rgba(255,255,255,0.5);
-  border-radius: 0.3rem;
-  padding: 0 0.5em;
-  margin-right: 0.5em;
-  line-height: 1.5em;
-  transition: all, var(--transition-time);
-}
-
-.cardDiscos:hover .tags .tag {
-  background: var(--color);
-  color: white;
-}
-
-.cardDiscos .date {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 0.75em;
-  padding: 1em;
-  line-height: 1em;
-  opacity: .8;
-}
-
-.cardDiscos:before, .cardDiscos:after {
-  content: '';
-  transform: scale(0);
-  transform-origin: top left;
-  border-radius: 50%;
-  position: absolute;
-  left: -50%;
-  top: -50%;
-  z-index: -5;
-  transition: all, var(--transition-time);
-  transition-timing-function: ease-in-out;
-}
-
-.cardDiscos:before {
-  background: #ddd;
-  width: 250%;
-  height: 250%;
-}
-
-.cardDiscos:after {
-  background: white;
-  width: 200%;
-  height: 200%;
-}
-
-.cardDiscos:hover {
-  color: var(--color);
-}
-
-.cardDiscos:hover:before, .cardDiscos:hover:after {
-  transform: scale(1);
-}
-
-.cardDiscos-grid-space .num {
-  font-size: 3em;
-  margin-bottom: 1.2rem;
-  margin-left: 1rem;
-}
-
-.info {
-  font-size: 1.2em;
-  display: flex;
-  padding: 1em 3em;
-  height: 3em;
-}
-
-.info img {
-  height: 3em;
-  margin-right: 0.5em;
-}
-
-.info h1 {
-  font-size: 1em;
-  font-weight: normal;
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 1285px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr 1fr;
-    margin: 0px!important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .cards-wrapper {
-    grid-template-columns: 1fr;
-    display: block!important;
-  }
-  .info {
-    justify-content: center;
-  }
-  .cardDiscos-grid-space .num {
-    margin-left: 0;
-    text-align: center;
-    display: block!important;
-  }
-  #discos{
-    display: block!important;
-  }
-  .cardDiscos-grid-space{
-    display: block!important;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .cards-wrapper {
-    padding: 4rem 2rem;
-  }
-  .cardDiscos {
-    max-width: calc(100vw - 4rem);
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .info {
-    display: block;
-    text-align: center;
-  }
-  .info h1 {
-    margin: 0;
-  }
-}
+/*--------------------------------*/
 
 
 
@@ -623,6 +437,10 @@ a {
     width: 95vw!important;
     margin-left: -20px!important;
   }
+  #selectTrack3{
+    width: 95vw!important;
+    margin-left: -20px!important;
+  }
   h2{
     transform: scale(0.7);
   }
@@ -637,14 +455,21 @@ a {
    background-repeat: repeat;
   }
   h4{
+    text-align: center;
     margin-top: 15px;
     width: 100vw;
     margin-left: -30px;
+ 
   }
   #reproductorBox{
     transform: translate(-10%);
     padding: 0vw!important;
   }
+
+  #reproductorPadre :first-child {
+    display: block!important;
+  }
+  
 }
 /*==================== 
  # Videos
@@ -665,55 +490,7 @@ a {
   margin-bottom: 50px;
 }
 
-.card-block {
-  font-size: 1em;
-  position: relative;
-  margin: 0;
-  padding: 1em;
-  border: none;
-  border-top: 1px solid rgba(34, 36, 38, .1);
-  box-shadow: none;
-   
-}
-.card {
-  font-size: 1em;
-  overflow: hidden;
-  padding: 5;
-  border: none;
-  border-radius: .28571429rem;
-  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
-  margin-top:20px;
-}
 
-.carousel-indicators li {
-  border-radius: 12px;
-  width: 12px;
-  height: 12px;
-  background-color: #404040;
-}
-.carousel-indicators li {
-  border-radius: 12px;
-  width: 12px;
-  height: 12px;
-  background-color: #404040;
-}
-.carousel-indicators .active {
-  background-color: white;
-  max-width: 12px;
-  margin: 0 3px;
-  height: 12px;
-}
-.carousel-control-prev-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.carousel-control-next-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.btn {
-margin-top: auto;
-}
 
 
 /*==================== 
