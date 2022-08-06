@@ -66,28 +66,6 @@ h2, h3, h4, h5, h6{
   }
 }
 
-/* Get Startet Button */
-.get-started-btn {
-  margin-left: 25px;
-  background: #000899;
-  color: #fff;
-  border-radius: 50px;
-  padding: 8px 25px 9px 25px;
-  white-space: nowrap;
-  transition: 0.3s;
-  font-size: 14px;
-  display: inline-block;
-}
-.get-started-btn:hover {
-  background: #00b371;
-  color: #fff;
-}
-@media (max-width: 992px) {
-  .get-started-btn {
-    margin: 0 15px 0 0;
-    padding: 6px 18px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -413,7 +391,8 @@ body {
   #reproductorTexto{
     width: 95vw!important;
     margin-top: 20px;
-    margin-left: -20px;
+    margin-left: -10px;
+    height: auto;
   }
   #hero h2 {
     transform:scale(0.7);
@@ -429,6 +408,8 @@ body {
     width: 95vw!important;
   }
   
+
+
   #selectTrack{
     width: 95vw!important;
     margin-left: -20px!important;
@@ -455,12 +436,11 @@ body {
    background-repeat: repeat;
   }
   h4{
-    text-align: center;
+    text-align: center!important;
     margin-top: 15px;
-    width: 100vw;
-    margin-left: -30px;
- 
+    width: 300px!important;
   }
+
   #reproductorBox{
     transform: translate(-10%);
     padding: 0vw!important;
@@ -469,13 +449,16 @@ body {
   #reproductorPadre :first-child {
     display: block!important;
   }
+  iframe {
+    width: 90%!important;
+  }
   
 }
 /*==================== 
  # Videos
 ====================== */
 #videosContainer{
-  background-image: url("../img/RobertoVivo.jpg");
+  background-image: url("../img/RobertoVivo.JPG");
   background-size: contain;
   padding: 5%;
 }

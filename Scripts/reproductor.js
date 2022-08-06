@@ -15,8 +15,8 @@ function cambiarTrack(track) {
     nuevo_audio.setAttribute("autoplay", "true")  
     audio_padre.appendChild(nuevo_audio)}
  function cargarReproductor() {
-          var select = document.getElementById("selectTrack")
-          var path = select.options[0].getAttribute("path")
+   var select = document.getElementById("selectTrack")
+   var path = select.options[0].getAttribute("path")
     nuevo_audio = document.createElement("audio")
     nuevo_audio.setAttribute("id","reproductor")
     nuevo_audio.setAttribute("controls", "controls")       
