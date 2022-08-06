@@ -66,6 +66,7 @@
        <a href="https://www.facebook.com/profile.php?id=739679542" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
        <a href="https://open.spotify.com/artist/1PBcUGq0h6gz8F71vWD5i4?si=mBmHMQIfTL6v1J1XXK5sUQ" target="_blank" title="Twitter"><i class="fa-brands fa-spotify"></i></a>
        <a title="instagram" target="_blank" href="https://www.instagram.com/robertoflores.canciones/"><i class="fa-brands fa-instagram"></i></a>
+       
          
       </div>
       
@@ -89,7 +90,7 @@
     <!-- End Hero -->
 
      <!-- ======= Reproductor ======= -->
-     <h2 class="text-center text-light m-4">CANCIONES</h2>
+     <h2 class="text-center text-light m-4"><i class="fa-solid fa-volume-high">CANCIONES</i> </h2>
      <div id="reproductorPadre">
      
       <div class="d-flex w-100">
@@ -97,8 +98,9 @@
         <h3>SELECCIONÁ Y DALE PLAY <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
         </svg></h3> 
-        <p>Para escuchar clickeá sobre una canción y dale play al reproductor</p>
-        <p>Para descargar clickeá en " ፧ " en el reproductor y te saldrá la opción</p>
+        <p>Para escuchar clickeá sobre una canción y dale play al reproductor.</p>
+        <p>Si estás desde un celular, presiona sobre un selector y elige tu canción.</p>
+        <p>Para descargar clickeá en " ፧ " en el reproductor y te saldrá la opción.</p>
         
       </div>
         <div id="reproductorTexto" >
@@ -113,19 +115,20 @@
     </div>
     <div class="d-flex justify-content-evenly flex-wrap" id="reproductorHijo">
       <div class="w-50">
-        <h4 style="background-color: rgba(0, 0, 0, 0.267); padding:6px;">Disco <span style="color:rgb(196, 231, 255);"> "Espejos"</span></h4>
+        <h4 style="background-color: rgba(0, 0, 0, 0.267); padding:6px;">Disco <span style="color:rgb(196, 231, 255);"> "Espejos"</span> <i class="fa-solid fa-volume-high"></i></h4> 
+        
         <select id = "selectTrack" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
-          
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1mXLayElwterFXZ9oUciparIkdQ8k75Gf"> 1- Ancestros</option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1OsKSC7Okj5nr1gb2dgUaKc6VhSRtzsdS" >2- Caligrafía</option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1OtfMd_1VdqZ2q22sshMm0fOyTMrRpayQ" >3- El Sol en la bruma</option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1xQ-i9pZX4uBxzf0X5TjF2Os_XxIe82Jl" >4- Entre mundos</option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1yeISKyimgJOkBXW-Ir-mLGNOPlpDMHh0" >5- Espejos</option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1DWqoLgeIJ4YvkwJhHAA-JH4wjBfI9JaW" >6- Hay vida mas barata pero no es vida </option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1evVCZAAWauj0Z4vA3fTpZzgV4bZ-CH6v" >7- Mi casa <i class="fa-solid fa-circle-play"></i> </option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1f6T4X8gc_aJwewiqhgPVPSY91klAlb-L" >8- Milonga de lejos  </option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=184uAUb0IBX8Yg42hIo23QMV5P8cD2Yu5" >9- Para seguir </option>
-            <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1HpUWY_vVirKTMbPu3le9M-5VWlEEpWPu" >10- Espiral </option>
+            <option selected disabled> Selecciona una canción aquí</option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1mXLayElwterFXZ9oUciparIkdQ8k75Gf"> 1- Ancestros</option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1OsKSC7Okj5nr1gb2dgUaKc6VhSRtzsdS" >2- Caligrafía</option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1OtfMd_1VdqZ2q22sshMm0fOyTMrRpayQ" >3- El Sol en la bruma</option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1xQ-i9pZX4uBxzf0X5TjF2Os_XxIe82Jl" >4- Entre mundos</option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1yeISKyimgJOkBXW-Ir-mLGNOPlpDMHh0" >5- Espejos</option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1DWqoLgeIJ4YvkwJhHAA-JH4wjBfI9JaW" >6- Hay vida mas barata pero no es vida </option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1evVCZAAWauj0Z4vA3fTpZzgV4bZ-CH6v" >7- Mi casa</i> </option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1f6T4X8gc_aJwewiqhgPVPSY91klAlb-L" >8- Milonga de lejos  </option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=184uAUb0IBX8Yg42hIo23QMV5P8cD2Yu5" >9- Para seguir </option>
+            <option style="background-color:rgba(58, 53, 144, 0.852);" path="https://drive.google.com/uc?export=download&id=1HpUWY_vVirKTMbPu3le9M-5VWlEEpWPu" >10- Espiral </option>
             </select>
          
       </div>
@@ -133,23 +136,27 @@
     
     
     <div class="w-50">
-      <h4 style="background-color: rgba(0, 0, 0, 0.267); padding:6px;">Adelanto <span style="color:rgb(196, 231, 255);"> "Fiesta de locos"</span></h4>
+      <h4 style="background-color: rgba(0, 0, 0, 0.267); margin-left: 20px; padding:6px;">Adelanto <span style="color:rgb(196, 231, 255);"> "Fiesta de locos"</span> <i class="fa-solid fa-volume-high"></i></h4>
+     
       <select id = "selectTrack2" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1DUFiM73TJZszI64AVJIQmTi2sddKCVi2"> 1- Cienmil Fardos</option>
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1F8zeC0M67FEnY7GllX9qndkAydZbUEFZ" >2- Fiesta de Locos</option>
+        <option selected disabled> Selecciona una canción aquí</option>
+          <option style="background-color:rgba(73, 153, 215, 0.852);" path="https://drive.google.com/uc?export=download&id=1DUFiM73TJZszI64AVJIQmTi2sddKCVi2"> 1- Cienmil Fardos</option>
+          <option style="background-color:rgba(73, 153, 215, 0.852);" path="https://drive.google.com/uc?export=download&id=1F8zeC0M67FEnY7GllX9qndkAydZbUEFZ" >2- Fiesta de Locos</option>
           
           </select> 
     </div>
 
     <div class="w-50">
-      <h4 style="background-color: rgba(0, 0, 0, 0.267); padding:6px;">Simples</h4>
+      <h4 style="background-color: rgba(0, 0, 0, 0.267); padding:6px;">Simples <i class="fa-solid fa-volume-high"></i></h4>
+      
       <select id = "selectTrack3" multiple onchange="cambiarTrack(this.options[this.selectedIndex]);">
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1VYCo_4ji5vcGiQENAZApWRJQXIbRhJLK"> 1- Una Flor</option>
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=131HozRD0IwYFSj8UcXcJ1_kOArZFKAMO" >2- Volveré a ser Nosotros</option>
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1UP0r_5qryZoPSPA1eRdG3p6amYr6gVAy" >3- Macondo</option>
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1Dm5ZTw_NmiyrAS0L-5O0z_L6bcQEUh8h" >4- Una Canción de Amor</option>
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1_FOebKDbBcbZStHeTaSVg-6T-_jkcq9f" >5- Cañada de Juan Bonyour</option>
-          <option style="background-color:rgba(112, 112, 112, 0.505);" path="https://drive.google.com/uc?export=download&id=1ZFZZ_5UKXPmA7A3QKTOiQH9hnOvtcnsZ" >6- Bote</option>
+        <option selected disabled> Selecciona una canción aquí</option>
+          <option style="background-color:rgba(41, 38, 38, 0.852);" path="https://drive.google.com/uc?export=download&id=1VYCo_4ji5vcGiQENAZApWRJQXIbRhJLK"> 1- Una Flor</option>
+          <option style="background-color:rgba(41, 38, 38, 0.852);" path="https://drive.google.com/uc?export=download&id=131HozRD0IwYFSj8UcXcJ1_kOArZFKAMO" >2- Volveré a ser Nosotros</option>
+          <option style="background-color:rgba(41, 38, 38, 0.852);" path="https://drive.google.com/uc?export=download&id=1UP0r_5qryZoPSPA1eRdG3p6amYr6gVAy" >3- Macondo</option>
+          <option style="background-color:rgba(41, 38, 38, 0.852);" path="https://drive.google.com/uc?export=download&id=1Dm5ZTw_NmiyrAS0L-5O0z_L6bcQEUh8h" >4- Una Canción de Amor</option>
+          <option style="background-color:rgba(41, 38, 38, 0.852);" path="https://drive.google.com/uc?export=download&id=1_FOebKDbBcbZStHeTaSVg-6T-_jkcq9f" >5- Cañada de Juan Bonyour</option>
+          <option style="background-color:rgba(41, 38, 38, 0.852);" path="https://drive.google.com/uc?export=download&id=1ZFZZ_5UKXPmA7A3QKTOiQH9hnOvtcnsZ" >6- Bote</option>
 
           </select> 
     </div>
@@ -167,7 +174,7 @@
 
 
     <div class="container py-3" id="sobreRoberto">
-      <h3 class="text-center">Sobre Roberto Flores</h3>
+      <h3 class="text-center"><i class="fa-solid fa-book-open">SOBRE ROBERTO FLORES</i></h3>
       <!-- Card Start -->
       <div class="card text-light bg-dark">
         <div class="row ">
@@ -261,7 +268,7 @@ Lleva editados cinco discos: “Sin prólogo" (2007), “Entre mundos” (2011),
 
      <!-- ======= Discos ======= -->
 
-    <h3 class="text-center m-4 text-light">Discografía</h3>
+    <h3 class="text-center m-4 text-light"><i class="fa-solid fa-compact-disc">DISCOGRAFÍA</i></h3> 
    
       <div class="d-flex justify-content-evenly flex-wrap" id="discos">
 
@@ -342,7 +349,7 @@ Lleva editados cinco discos: “Sin prólogo" (2007), “Entre mundos” (2011),
 
       
       <div class="text-center" id="videosContainer">
-        <h3 class="text-center m-4 text-light">Videos</h3>
+        <h3 class="text-center m-4 text-light"><i class="fa-solid fa-video">VIDEOS</i></h3>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -456,7 +463,7 @@ Lleva editados cinco discos: “Sin prólogo" (2007), “Entre mundos” (2011),
         </div>
         </div>
         <form action="https://formsubmit.co/100fardos@gmail.com" method="POST" class="text-start">
-        <h3>Enviar un email</h3>
+        <h3> <i class="fa-solid fa-envelope"></i> Enviar un email</h3>
         <div class="mb-3">
           <label for="formGroupExampleInput" class="form-label">Nombre</label>
           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Escribe tu nombre">
