@@ -428,7 +428,8 @@ body {
   h4{
     text-align: center!important;
     margin-top: 15px;
-    width: 300px!important;
+    width: 320px!important;
+    margin-left: 0%!important;
   }
 
   #reproductorBox{
