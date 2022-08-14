@@ -97,7 +97,7 @@
         <div id="reproductorTexto" >
         <h3>SELECCIONÁ Y DALE PLAY</h3>
          
-        <p>Para escuchar clickeá sobre una canción y dale play al reproductor.</p>
+        <p>Para escuchar clickeá sobre una canción y se reproducirá automaticamente. Para pausar andá al reproductor.</p>
         <p>Para descargar clickeá en " ፧ " en el reproductor y te saldrá la opción.</p>
         
       </div>
@@ -114,10 +114,53 @@
     <div class="d-flex justify-content-evenly flex-wrap" id="reproductorHijo">
       <div class="w-50">
         <h4 style="background-color: rgba(0, 0, 0, 0.267); padding:6px;">Disco <span style="color:rgb(196, 231, 255);"> "Espejos"</span></h4> 
-        <form action="">
+        <form action="submit" id="selectTrack" name="Canciones" onchange="validarRadio()">
+          <ul class="list-group" id="lista">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1mXLayElwterFXZ9oUciparIkdQ8k75Gf" id="firstRadio">
+              <label class="form-check-label" for="firstRadio"> <i class="fa-solid fa-volume-high"></i>  1- Ancestros</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1OsKSC7Okj5nr1gb2dgUaKc6VhSRtzsdS" id="secondRadio">
+              <label class="form-check-label" for="secondRadio"><i class="fa-solid fa-volume-high"></i> 2- Caligrafía</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1OtfMd_1VdqZ2q22sshMm0fOyTMrRpayQ" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i> 3- El Sol en la bruma</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1xQ-i9pZX4uBxzf0X5TjF2Os_XxIe82Jl" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i>4- Entre mundos</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1yeISKyimgJOkBXW-Ir-mLGNOPlpDMHh0" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i> 5- Espejos</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1DWqoLgeIJ4YvkwJhHAA-JH4wjBfI9JaW" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i> 6- Hay vida mas barata pero no es vida</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1evVCZAAWauj0Z4vA3fTpZzgV4bZ-CH6v" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i> 7- Mi casa</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1f6T4X8gc_aJwewiqhgPVPSY91klAlb-L" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i> 8- Milonga de lejos</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=184uAUb0IBX8Yg42hIo23QMV5P8cD2Yu5" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i>9- Para seguir</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="radio" name="Espejos" value="https://drive.google.com/uc?export=download&id=1HpUWY_vVirKTMbPu3le9M-5VWlEEpWPu" id="thirdRadio">
+              <label class="form-check-label" for="thirdRadio"><i class="fa-solid fa-volume-high"></i> 10- Espiral </label>
+            </li>
+             </ul>
+      </form>
         
-        <select id = "selectTrack" size="2" onchange="cambiarTrack(this.options[this.selectedIndex]);">
-            <optgroup class="bg-dark bg-opacity-75">
+       <!--  <select id = "selectTrack" size="2" onchange="cambiarTrack(this.options[this.selectedIndex]);">
+          <optgroup class="bg-dark bg-opacity-75">
             <option disabled class="bg-info w-75"> Selecciona una canción aquí</option>
             <option path="https://drive.google.com/uc?export=download&id=1mXLayElwterFXZ9oUciparIkdQ8k75Gf"> 1- Ancestros</option>
             <option path="https://drive.google.com/uc?export=download&id=1OsKSC7Okj5nr1gb2dgUaKc6VhSRtzsdS" >2- Caligrafía</option>
@@ -130,8 +173,8 @@
             <option path="https://drive.google.com/uc?export=download&id=184uAUb0IBX8Yg42hIo23QMV5P8cD2Yu5" >9- Para seguir </option>
             <option path="https://drive.google.com/uc?export=download&id=1HpUWY_vVirKTMbPu3le9M-5VWlEEpWPu" >10- Espiral </option>
           </optgroup>
-          </select>
-          </form>
+          </select> -->
+         
       </div>
     
     
@@ -145,7 +188,12 @@
           <option  path="https://drive.google.com/uc?export=download&id=1DUFiM73TJZszI64AVJIQmTi2sddKCVi2"> 1- Cienmil Fardos</option>
           <option  path="https://drive.google.com/uc?export=download&id=1F8zeC0M67FEnY7GllX9qndkAydZbUEFZ" >2- Fiesta de Locos</option>
         </optgroup>
-          </select> 
+          </select>
+          
+         
+
+        
+          
     </div>
 
     <div class="w-50">
@@ -165,6 +213,7 @@
           </select> 
     </div>
     
+   
    
   </div>
  
