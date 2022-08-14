@@ -278,6 +278,12 @@ body {
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   border-radius: 13px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+#selectTrack > ul > li{
+  background-color: #00000059!important;
+  color: #ffffff;
 }
 #selectTrack2{ 
   margin-left: 5%!important;
