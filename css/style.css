@@ -1,5 +1,7 @@
 
 
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -303,6 +305,12 @@ body {
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   border-radius: 13px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+#selectTrack2 > ul > li{
+  background-color: #00000059!important;
+  color: #ffffff;
 }
 #selectTrack3{ 
   margin-left: 0%!important;
@@ -323,6 +331,12 @@ body {
   -moz-border-radius: 13px;
   border-radius: 13px;
   align-self: center;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}
+#selectTrack3 > ul > li{
+  background-color: #00000059!important;
+  color: #ffffff;
 }
  #reproductorBox{
   background-color: #0f0f0f;
