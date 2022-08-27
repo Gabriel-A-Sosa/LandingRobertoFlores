@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #080099;
+  color: #4b92dc!important ;
   text-decoration: none;
 }
 
@@ -180,6 +180,9 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+  .nav {
+    height: 40px;
+  }
 }
 
 
@@ -204,10 +207,13 @@ body {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/Roberto.jpg") top center;
+  background: url("../img/Portada.jpeg") center;
   background-size: 100vw;
   background-repeat:space;
   position: relative;
+}
+#infoshows{
+  display: none;
 }
 
 
@@ -463,7 +469,42 @@ body {
   iframe {
     width: 90%!important;
   }
-  
+  #herotexto{
+    display: none;
+  }
+  #noticiasyshows{
+    display: block!important;
+    width: 100% !important;
+    overflow: scroll;
+  }
+  #noticias{
+    width: 100%!important;
+  }
+  #noticias p{
+    display: none;
+  }
+  #noticias h2 {
+    margin-bottom: 0px;
+    margin-top: -5px;
+    color: #4b92dc;
+  }
+  #shows{
+    width: 100%!important;
+    padding: 0%!important;
+  }
+  #shows p {
+    display: none;
+  }
+  #shows h2 {
+    margin-bottom: 0px;
+    margin-top: -5px;
+    color: #4b92dc;
+  }
+  #infoshows{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 /*==================== 
  # Videos
