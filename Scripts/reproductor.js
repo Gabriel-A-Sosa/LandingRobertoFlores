@@ -92,3 +92,9 @@ function validarRadio(){
     padre = document.getElementById("reproductorBox")
     padre.appendChild(nuevo_audio)
  }
+
+
+ 
+
+
+
